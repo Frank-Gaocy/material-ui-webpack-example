@@ -9,6 +9,7 @@ import {deepOrange500} from 'material-ui/styles/colors';
 import FlatButton from 'material-ui/FlatButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Button from 'material-ui-next/Button'; // v1.x
 
 const styles = {
   container: {
@@ -56,6 +57,9 @@ class Main extends Component {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <div style={styles.container}>
+          <Button>
+            Material-UI v1
+          </Button>
           <Dialog
             open={this.state.open}
             title="Super Secret Password"
